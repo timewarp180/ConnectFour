@@ -171,12 +171,12 @@ public class Game {
 		if(gameOver) {
 			
 			g.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
-			g.setColor(Color.BLACK);
+			g.setColor(Color.GREEN);
 			g.setFont(new Font("Ariel", 1, 120));
 			String sGameOver = "Game Over";
 			String sWinner;
 			if(turn == 0 ) sWinner = "Red W0n";
-			else if(turn ==1) sWinner = "Green won";
+			else if(turn ==1) sWinner = "Yellow won";
 			
 			else sWinner = "Its a tie";
 			int ig = g.getFontMetrics().stringWidth(sGameOver) / 2;
