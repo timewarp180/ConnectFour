@@ -66,6 +66,7 @@ public class ConnectFour extends Canvas implements Runnable {
 		window.setSize(800,600);
 		titleImage = new ImageIcon(getClass().getClassLoader().getResource("background.png"));
 		window.setResizable(false);
+		window.setLocationRelativeTo(null);
 		//window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.getContentPane().setBackground(Color.black);
 		window.setLayout(null);
@@ -118,8 +119,6 @@ public class ConnectFour extends Canvas implements Runnable {
 	public void createGameScreen() {
 		
 		ConnectFour c = new ConnectFour();
-		
-		
         c.frame.setResizable(false);
         c.frame.setTitle("Connect Four");
         c.frame.add(c);
@@ -129,7 +128,6 @@ public class ConnectFour extends Canvas implements Runnable {
         c.frame.setLocationRelativeTo(null);
         c.frame.setAlwaysOnTop(true);
         c.start();
-		
 	}
 	
 	
